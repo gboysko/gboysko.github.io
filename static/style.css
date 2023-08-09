@@ -1,0 +1,49 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.disclaimer {
+    border: double 3px #aaa;
+    padding: 0.75em;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+div.image-title {
+    margin: 0.375em 0 0 0;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 0.375em solid #ddd;
+    padding: 0.75em;
+    margin-left: 0;
+}
+
+h1.day-section {
+    display: table-row;
+    background: linear-gradient(to right, #030, white);
+}
+
+h1.day-section > span.day-num {
+    background-color: #333;
+    color: #fff;
+    font-size: 0.4em;
+    padding: 0.25em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 0.15em solid white;
+}
+
+h1.day-section > span.date {
+    display: table-cell;
+    padding: 0.25em 0.25em 0.25em 0.5em;
+    font-size: .875em;
+}
