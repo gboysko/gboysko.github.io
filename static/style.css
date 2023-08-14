@@ -1,5 +1,14 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+body {
+    width: 800px;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 2em auto;
 }
 
 div.disclaimer {
@@ -26,23 +35,36 @@ blockquote {
     margin-left: 0;
 }
 
-h1.day-section {
-    display: table-row;
-    background: linear-gradient(to right, #030, white);
+h1 {
+    font-size: 1.6em;
 }
 
-h1.day-section > span.day-num {
+h2.day-section {
+    display: table-row;
+    x-background: linear-gradient(to right, #030, white);
+}
+
+h2.day-section > span.day-num, h2.day-section > .month-day {
     background-color: #333;
     color: #fff;
     font-size: 0.4em;
-    padding: 0.25em;
+    padding: 0.25em 0.75em;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     border-right: 0.15em solid white;
+    text-transform: uppercase;
+    x-font-variant: small-caps;
+    line-height: 1;
+    height: 2em;
+    width: 2em;
 }
 
-h1.day-section > span.date {
+h2.day-section > .month-day > span {
+    font-size: 1.675em;
+}
+
+h2.day-section > span.date, h2.day-section > .heading-text {
     display: table-cell;
     padding: 0.25em 0.25em 0.25em 0.5em;
     font-size: .875em;
