@@ -1,19 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+:root {
+    --main-bg-color: hsl(159, 25%, 87%);
+    --page-bg-color: hsl(60, 25%, 87%);
+    --highlight-color: hsl(60, 25%, 50%);
+}
+
 html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--main-bg-color);
+    font-family: 'Playfair Display', Times, serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.4;
 }
 
 body {
-    width: 800px;
-    border: 1px solid black;
-    padding: 1em;
+    background-color: var(--page-bg-color);
+    border: 0.001rem solid gray;
+    box-shadow: 5px 5px 10px gray;
     margin: 2em auto;
+    padding: 1em;
+    width: 800px;
 }
 
+article {
+    line-height: 1.5;
+}
 div.disclaimer {
-    border: double 3px #aaa;
+    border: double 0.4rem var(--highlight-color);
     padding: 0.75em;
+    font-size: 0.9em;
 }
 
 img {
@@ -22,50 +39,49 @@ img {
 }
 
 div.image-title {
-    margin: 0.375em 0 0 0;
-    font-style: italic;
-    text-align: center;
     font-size: 0.9em;
+    font-style: italic;
+    margin: 0.375em 0 0 0;
+    text-align: center;
 }
 
 blockquote {
+    border-left: 0.375em solid var(--highlight-color);
     font-style: italic;
-    border-left: 0.375em solid #ddd;
-    padding: 0.75em;
     margin-left: 0;
+    padding: 0.75em;
 }
 
 h1 {
-    font-size: 1.6em;
-}
-
-h2.day-section {
-    display: table-row;
-    x-background: linear-gradient(to right, #030, white);
-}
-
-h2.day-section > span.day-num, h2.day-section > .month-day {
-    background-color: #333;
+    background-image: url("../files/DSC_9107.JPG");
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: #fff;
-    font-size: 0.4em;
-    padding: 0.25em 0.75em;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    border-right: 0.15em solid white;
-    text-transform: uppercase;
-    x-font-variant: small-caps;
+    height: 200px;
+    padding: 0.25em 0 0 0.5em;
+}
+
+h2.day-section > div.month-day {
+    background-color: #333;
+    color: var(--page-bg-color);
+    xcolor: #fff;
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 900;
     line-height: 1;
-    height: 2em;
-    width: 2em;
+    padding: 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    height: 1.2em;
+    width: 1.2em;
 }
 
-h2.day-section > .month-day > span {
-    font-size: 1.675em;
+h2.day-section > div.month-day > span:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
-h2.day-section > span.date, h2.day-section > .heading-text {
-    display: table-cell;
-    padding: 0.25em 0.25em 0.25em 0.5em;
-    font-size: .875em;
+h2.day-section > div.month-day > span:nth-child(2) {
+    font-size: 1.1rem;
 }
