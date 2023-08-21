@@ -1,87 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
 
 :root {
-    --main-bg-color: hsl(159, 25%, 87%);
-    --page-bg-color: hsl(60, 25%, 87%);
-    --highlight-color: hsl(60, 25%, 50%);
+  --main-bg-color: hsl(108, 25%, 92%);
+  --page-bg-color: hsl(60, 25%, 87%);
+  --highlight-color: hsl(32, 25%, 25%);
+  --light-orange: #fff2df;
+  --dark-orange: #ff7a18;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
 }
 
 html {
-    background-color: var(--main-bg-color);
-    font-family: 'Playfair Display', Times, serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.4;
+  background-color: var(--main-bg-color);
+  font-family: "Playfair Display", Times, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 body {
-    background-color: var(--page-bg-color);
-    border: 0.001rem solid gray;
-    box-shadow: 5px 5px 10px gray;
-    margin: 2em auto;
-    padding: 1em;
-    width: 800px;
+  background-color: var(--page-bg-color);
+  border: 0.001rem solid gray;
+  box-shadow: 5px 5px 10px gray;
+  margin: 2em auto;
+  width: 800px;
 }
 
 article {
-    line-height: 1.5;
+  line-height: 1.5;
+  padding: 1em;
 }
+
 div.disclaimer {
-    border: double 0.4rem var(--highlight-color);
-    padding: 0.75em;
-    font-size: 0.9em;
+  border: double 0.2rem var(--highlight-color);
+  padding: 0.75em;
+  font-size: 0.9em;
+}
+
+div.info-tip {
+  align-items: stretch;
+  background-color: var(--light-orange);
+  background-origin: padding-box;
+  background-clip: border-box;
+  border-radius: 8px;
+  font-size: 0.8em;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  position: relative;
+  max-width: 600px;
+}
+
+div.info-tip:before {
+  background: var(--dark-orange);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: white;
+  content: "ⓘ";
+  display: grid;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 1.2em;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  place-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
 
 img {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 div.image-title {
-    font-size: 0.9em;
-    font-style: italic;
-    margin: 0.375em 0 0 0;
-    text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0.375em 0 0 0;
+  text-align: center;
 }
 
 blockquote {
-    border-left: 0.375em solid var(--highlight-color);
-    font-style: italic;
-    margin-left: 0;
-    padding: 0.75em;
+  border-left: 0.375em solid var(--highlight-color);
+  font-style: italic;
+  margin-left: 0;
+  letter-spacing: 0.03em;
+  padding: 0.75em;
+  color: var(--highlight-color);
 }
 
 h1 {
-    background-image: url("../files/DSC_9107.JPG");
-    background-position-y: -100px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: #fff;
-    height: 200px;
-    padding: 0.25em 0 0 0.5em;
+  margin-top: 0;
+}
+
+h1.colorado-2010 {
+  background-image: url("../files/DSC_9107.jpg");
+  background-position-y: -100px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+  height: 200px;
+  padding: 0.25em 0 0 0.5em;
+  text-shadow: 1px 1px 2px #000;
 }
 
 h2.day-section > div.month-day {
-    background-color: #333;
-    color: var(--page-bg-color);
-    xcolor: #fff;
-    display: inline-block;
-    font-family: Roboto;
-    font-weight: 900;
-    line-height: 1;
-    padding: 0.2em;
-    text-align: center;
-    vertical-align: middle;
-    height: 1.2em;
-    width: 1.2em;
+  background-color: #333;
+  color: var(--page-bg-color);
+  display: inline-block;
+  font-family: Roboto;
+  font-weight: 900;
+  line-height: 0.9;
+  padding: 0 0.2em 0.2em 0.2em;
+  vertical-align: middle;
 }
 
 h2.day-section > div.month-day > span:nth-child(1) {
-    text-transform: uppercase;
-    font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 h2.day-section > div.month-day > span:nth-child(2) {
-    font-size: 1.1rem;
+  font-size: 1rem;
 }
