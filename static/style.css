@@ -51,7 +51,7 @@ div.info-tip {
   font-size: 0.8em;
   padding: 0.5rem 0.5rem 0.5rem 2.5rem;
   position: relative;
-  max-width: 600px;
+  margin: 0 2em;
 }
 
 div.info-tip:before {
@@ -59,11 +59,10 @@ div.info-tip:before {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   color: white;
-  content: "ⓘ";
+  content: "Tip";
   display: grid;
   font-family: Roboto;
   font-weight: 900;
-  font-size: 1.2em;
   margin-right: 1rem;
   padding: 0.5rem;
   place-items: center;
