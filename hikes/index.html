@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hikes</title>
+        <link rel="stylesheet" href="../static/style.css" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+        <!-- Add click handlers to each card -->
+        <script>
+            window.onload = (event) => {
+                // Find all article card DIVs
+                const cards = document.getElementsByClassName("article-card");
+
+                // Loop through each card...
+                for (let i=0; i<cards.length; i++) {
+                    // Get our ith card...
+                    const card = cards.item(i);
+
+                    // Look for the "data-article-link" attribute...
+                    const articleLink = card.dataset.articleLink;
+
+                    // Do we have a link?
+                    if (articleLink) {
+                        // Add a listener for the click event...
+                        card.addEventListener("click", (event) => {
+                            window.location.href = articleLink;
+                        });
+
+                        // Set the cursor to pointer...
+                        card.style.cursor = "pointer";
+                    }
+
+                    // Look for the "data-image-url" attribute
+                    const imageUrl = card.dataset.imageUrl;
+
+                    // Do we have an image?
+                    if (imageUrl) {
+                        // Set it as the background image...
+                        card.style.backgroundImage = `url(${imageUrl})`;
+                        card.style.backgroundSize = "100%";
+                        card.style.backgroundRepeat = "no-repeat";
+                    }
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Hikes</h1>
+        <div class="card-container">
+            <div class="article-card" data-article-link="./colorado-2010" data-image-url="./colorado-2010/files/DSC_9246.jpg">
+                <div class="title">
+                    Colorado 2010
+                </div>
+                <div class="overlay">
+                    I take out to two first-time campers into the Rockies and almost kill them. Spoiler: they make it out alive.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

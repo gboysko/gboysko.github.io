@@ -2,132 +2,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
 
 :root {
-  --main-bg-color: hsl(108, 25%, 92%);
-  --page-bg-color: hsl(60, 25%, 87%);
-  --highlight-color: hsl(32, 25%, 25%);
-  --light-orange: #fff2df;
-  --dark-orange: #ff7a18;
+    --main-bg-color: hsl(108, 25%, 92%);
+    --page-bg-color: hsl(60, 25%, 87%);
+    --highlight-color: hsl(32, 25%, 25%);
+    --light-orange: #fff2df;
+    --dark-orange: #ff7a18;
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 *,
 :before,
 :after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  background-color: var(--main-bg-color);
-  font-family: "Playfair Display", Times, serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
-}
-
-body {
-  background-color: var(--page-bg-color);
-  border: 0.001rem solid gray;
-  box-shadow: 5px 5px 10px gray;
-  margin: 2em auto;
-  width: 800px;
+    background-color: var(--main-bg-color);
+    font-family: "Playfair Display", Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
 article {
-  line-height: 1.5;
-  padding: 1em;
+    background-color: var(--page-bg-color);
+    border: 0.001rem solid gray;
+    box-shadow: 5px 5px 10px gray;
+    margin: 1em auto 2em;
+    width: 800px;
+    line-height: 1.5;
+    padding: 1em;
+}
+
+div.navbar {
+    width: 800px;
+    margin: 0.25em auto;
+}
+
+div.navbar > a {
+    text-decoration: underline 2px;
+    color: black;
+    font-size: 0.8rem;
 }
 
 div.disclaimer {
-  border: double 0.2rem var(--highlight-color);
-  padding: 0.75em;
-  font-size: 0.9em;
+    border: double 0.2rem var(--highlight-color);
+    padding: 0.75em;
+    font-size: 0.9em;
 }
 
 div.info-tip {
-  background-color: var(--light-orange);
-  border-radius: 8px;
-  line-height: 1.2;
-  margin: 0 2em;
-  padding: 0.5rem 0.5rem 0.5rem 3.5rem;
-  position: relative;
+    background-color: var(--light-orange);
+    border-radius: 8px;
+    line-height: 1.2;
+    margin: 0 2em;
+    padding: 0.5rem 0.5rem 0.5rem 3.5rem;
+    position: relative;
 }
 
 div.info-tip > span.material-symbols-outlined {
-  background: var(--dark-orange);
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
-  color: white;
-  display: grid;
-  font-size: 1.7rem;
-  height: 100%;
-  left: 0;
-  padding: 0.6rem 0.5rem 0.4rem;
-  place-items: center;
-  position: absolute;
-  top: 0;
+    background: var(--dark-orange);
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    color: white;
+    display: grid;
+    font-size: 1.7rem;
+    height: 100%;
+    left: 0;
+    padding: 0.6rem 0.5rem 0.4rem;
+    place-items: center;
+    position: absolute;
+    top: 0;
 }
 
 div.info-tip > span.message {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 img {
-  display: block;
-  margin: auto;
+    display: block;
+    margin: auto;
 }
 
 div.image-title {
-  font-size: 0.9em;
-  font-style: italic;
-  margin: 0.375em 0 0 0;
-  text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0.375em 0 0 0;
+    text-align: center;
 }
 
 blockquote {
-  border-left: 0.375em solid var(--highlight-color);
-  font-style: italic;
-  margin-left: 0;
-  letter-spacing: 0.03em;
-  padding: 0.75em;
-  color: var(--highlight-color);
+    border-left: 0.375em solid var(--highlight-color);
+    font-style: italic;
+    margin-left: 0;
+    letter-spacing: 0.03em;
+    padding: 0.75em;
+    color: var(--highlight-color);
 }
 
 h1 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 h1.colorado-2010 {
-  background-image: url("../files/DSC_9107.jpg");
-  background-position-y: -100px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color: #fff;
-  height: 200px;
-  padding: 0.25em 0 0 0.5em;
-  text-shadow: 1px 1px 2px #000;
+    background-image: url("../hikes/colorado-2010/files/DSC_9107.jpg");
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    height: 200px;
+    padding: 0.25em 0 0 0.5em;
+    text-shadow: 1px 1px 2px #000;
 }
 
 h2.day-section > div.month-day {
-  background-color: #333;
-  color: var(--page-bg-color);
-  display: inline-block;
-  font-family: Roboto;
-  font-weight: 900;
-  line-height: 0.9;
-  padding: 0 0.2em 0.2em 0.2em;
-  vertical-align: middle;
+    background-color: #333;
+    color: var(--page-bg-color);
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 900;
+    line-height: 0.9;
+    padding: 0 0.2em 0.2em 0.2em;
+    vertical-align: middle;
 }
 
 h2.day-section > div.month-day > span:nth-child(1) {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 h2.day-section > div.month-day > span:nth-child(2) {
-  font-size: 1rem;
+    font-size: 1rem;
+}
+
+div.card-container {
+    display: flex;
+}
+
+div.card-container > div.article-card {
+    box-sizing: content-box;
+    border-radius: 5px;
+    border: 1px solid var(--highlight-color);
+    box-shadow: 3px 3px 3px var(--highlight-color);
+    cursor: not-allowed;
+    height: 243px;
+    position: relative;
+    width: 362px;
+}
+
+div.card-container > div.article-card > div.title {
+    color: white;
+    font-size: 1.5rem;
+    left: 0;
+    padding: 0.5rem;
+    position: absolute;
+    text-shadow: 1px 1px 2px #000;
+    top: 0;
+}
+
+div.card-container > div.article-card > div.overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 0.9rem;
+    height: 60px;
+    left: 0;
+    padding: 0.5rem;
+    position: absolute;
+    top: 182px;
+    width: 362px;
 }
