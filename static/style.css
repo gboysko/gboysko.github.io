@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
 
 :root {
     --main-bg-color: hsl(108, 25%, 92%);
@@ -10,7 +10,7 @@
 }
 
 .material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
 *,
@@ -21,7 +21,7 @@
 
 html {
     background-color: var(--main-bg-color);
-    font-family: "Playfair Display", Times, serif;
+    font-family: 'Playfair Display', Times, serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
@@ -42,9 +42,13 @@ div.navbar {
     margin: 0.25em auto;
 }
 
-div.navbar > a {
+a.link {
     text-decoration: underline 2px;
     color: black;
+    text-underline-position: under;
+}
+
+div.navbar > a {
     font-size: 0.8rem;
 }
 
@@ -108,7 +112,7 @@ h1 {
 }
 
 h1.colorado-2010 {
-    background-image: url("../hikes/colorado-2010/files/DSC_9107.jpg");
+    background-image: url('../hikes/colorado-2010/files/DSC_9107.jpg');
     background-position-y: -100px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -119,7 +123,7 @@ h1.colorado-2010 {
 }
 
 h1.washington-2023 {
-    background-image: url("../hikes/washington-2023/files/FECC8D13-BE54-4F24-A2D3-8AD02A861F64.jpg");
+    background-image: url('../hikes/washington-2023/files/FECC8D13-BE54-4F24-A2D3-8AD02A861F64.jpg');
     background-position: -150px -350px;
     background-repeat: no-repeat;
     background-size: 200%;
