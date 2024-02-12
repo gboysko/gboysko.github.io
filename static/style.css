@@ -193,3 +193,22 @@ div.card-container > div.article-card > div.overlay {
     top: 182px;
     width: 362px;
 }
+
+table.bio-data {
+    border-collapse: collapse;
+}
+
+table.bio-data th {
+    background-color: #333;
+    color: #ddd;
+    font-size: 0.8em;
+}
+
+table.bio-data td {
+    text-align: right;
+}
+
+table.bio-data td, table.bio-data th {
+    padding: 0.3em;
+    border: 1pt solid #999;
+}
