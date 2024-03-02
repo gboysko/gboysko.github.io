@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200809alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('575')"><span class="albumName">"As the Sky Stared Down With Angry Clouds"</span>, by Fire When Ready</li>
+			<li onclick="moveToAlbum('1597')"><span class="albumName">"Beat"</span>, by King Crimson</li>
+			<li onclick="moveToAlbum('582')"><span class="albumName">"Beware of the Maniacs"</span>, by The Dodos</li>
+			<li onclick="moveToAlbum('1594')"><span class="albumName">"Close to the Edge"</span>, by Yes</li>
+			<li onclick="moveToAlbum('1598')"><span class="albumName">"Costello Music"</span>, by The Fratellis</li>
+			<li onclick="moveToAlbum('1595')"><span class="albumName">"Going for the One"</span>, by Yes</li>
+			<li onclick="moveToAlbum('2824')"><span class="albumName">"I Was Raised on Matthew, Mark, Luke & Laura"</span>, by PAS/CAL</li>
+			<li onclick="moveToAlbum('1599')"><span class="albumName">"I'm Wide Awake, It's Morning"</span>, by Bright Eyes</li>
+			<li onclick="moveToAlbum('1456')"><span class="albumName">"In the Aeroplane Over the Sea"</span>, by Neutral Milk Hotel</li>
+			<li onclick="moveToAlbum('1593')"><span class="albumName">"Inside a Boy"</span>, by My Brightest Diamond</li>
+			<li onclick="moveToAlbum('1865')"><span class="albumName">"Loyalty to Loyalty"</span>, by Cold War Kids</li>
+			<li onclick="moveToAlbum('1167')"><span class="albumName">"Marry Me"</span>, by St. Vincent</li>
+			<li onclick="moveToAlbum('1600')"><span class="albumName">"Narrow Stairs"</span>, by Death Cab for Cutie</li>
+			<li onclick="moveToAlbum('1596')"><span class="albumName">"Red"</span>, by King Crimson</li>
+			<li onclick="moveToAlbum('1225')"><span class="albumName">"Robbers & Cowards"</span>, by Cold War Kids</li>
+			<li onclick="moveToAlbum('1576')"><span class="albumName">"Santogold"</span>, by Santogold</li>
+			<li onclick="moveToAlbum('1588')"><span class="albumName">"The Rhumb Line"</span>, by Ra Ra Riot</li>
+			<li onclick="moveToAlbum('1590')"><span class="albumName">"Waited Up Til It Was Light"</span>, by Johnny Foreigner</li>
+		</ul>
+	</div>
+</body>
+</html>

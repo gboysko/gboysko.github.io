@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201005alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2644')"><span class="albumName">"Astro Coast"</span>, by Surfer Blood</li>
+			<li onclick="moveToAlbum('2646')"><span class="albumName">"Broken Bells"</span>, by Broken Bells</li>
+			<li onclick="moveToAlbum('2650')"><span class="albumName">"Digital Bang: The 2010 Sub Pop Sampler for Amazon"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('2648')"><span class="albumName">"Forgiveness Rock Record"</span>, by Broken Social Scene</li>
+			<li onclick="moveToAlbum('2649')"><span class="albumName">"Heaven Is Whenever"</span>, by The Hold Steady</li>
+			<li onclick="moveToAlbum('2651')"><span class="albumName">"High Violet"</span>, by The National</li>
+			<li onclick="moveToAlbum('2677')"><span class="albumName">"I Will Be"</span>, by Dum Dum Girls</li>
+			<li onclick="moveToAlbum('2600')"><span class="albumName">"Together"</span>, by The New Pornographers</li>
+		</ul>
+	</div>
+</body>
+</html>

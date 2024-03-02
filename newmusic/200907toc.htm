@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200907alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1903')"><span class="albumName">"Café Zen"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('1921')"><span class="albumName">"Goat"</span>, by Jesus Lizard</li>
+			<li onclick="moveToAlbum('1914')"><span class="albumName">"Got Nuffin"</span>, by Spoon</li>
+			<li onclick="moveToAlbum('1902')"><span class="albumName">"Honeysuckle Weeks"</span>, by The Submarines</li>
+			<li onclick="moveToAlbum('1917')"><span class="albumName">"Is This It"</span>, by The Strokes</li>
+			<li onclick="moveToAlbum('1915')"><span class="albumName">"We Were Dead Before The Ship Even Sank"</span>, by Modest Mouse</li>
+		</ul>
+	</div>
+</body>
+</html>

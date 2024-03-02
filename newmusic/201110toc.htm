@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201110alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2968')"><span class="albumName">"College Dropout"</span>, by Kanye West</li>
+			<li onclick="moveToAlbum('1724')"><span class="albumName">"Heroes"</span>, by David Bowie</li>
+			<li onclick="moveToAlbum('2934')"><span class="albumName">"Late Registration"</span>, by Kanye West</li>
+			<li onclick="moveToAlbum('2977')"><span class="albumName">"Meat Is Murder"</span>, by The Smiths</li>
+			<li onclick="moveToAlbum('2978')"><span class="albumName">"Paul's Boutique"</span>, by Beastie Boys</li>
+			<li onclick="moveToAlbum('2979')"><span class="albumName">"Rank"</span>, by The Smiths</li>
+			<li onclick="moveToAlbum('2976')"><span class="albumName">"Sheer Heart Attack"</span>, by Queen</li>
+			<li onclick="moveToAlbum('314')"><span class="albumName">"Siamese Dream"</span>, by Smashing Pumpkins</li>
+			<li onclick="moveToAlbum('2963')"><span class="albumName">"Strange Mercy"</span>, by St. Vincent</li>
+			<li onclick="moveToAlbum('2958')"><span class="albumName">"The Dreaming"</span>, by Kate Bush</li>
+			<li onclick="moveToAlbum('1752')"><span class="albumName">"The Execution of All Things"</span>, by Rilo Kiley</li>
+			<li onclick="moveToAlbum('2959')"><span class="albumName">"The Rip Tide"</span>, by Beirut</li>
+			<li onclick="moveToAlbum('2970')"><span class="albumName">"The Unplanned Mixtape"</span>, by Macklemore</li>
+			<li onclick="moveToAlbum('2972')"><span class="albumName">"The VS EP"</span>, by Macklemore</li>
+			<li onclick="moveToAlbum('2973')"><span class="albumName">"Watch the Throne"</span>, by Jay-Z and Kanye West</li>
+			<li onclick="moveToAlbum('2974')"><span class="albumName">"Wild Honey"</span>, by The Beach Boys</li>
+			<li onclick="moveToAlbum('2975')"><span class="albumName">"Young Americans"</span>, by David Bowie</li>
+		</ul>
+	</div>
+</body>
+</html>

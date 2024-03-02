@@ -1,0 +1,33 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200904alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1715')"><span class="albumName">"Bright Ideas"</span>, by Portastatic</li>
+			<li onclick="moveToAlbum('1870')"><span class="albumName">"Elf-Titled"</span>, by The Advantage</li>
+			<li onclick="moveToAlbum('1764')"><span class="albumName">"No Agreement"</span>, by Fela Kuti</li>
+			<li onclick="moveToAlbum('1752')"><span class="albumName">"The Execution of All Things"</span>, by Rilo Kiley</li>
+			<li onclick="moveToAlbum('1777')"><span class="albumName">"Viva Nueva"</span>, by Rustic Overtones</li>
+		</ul>
+	</div>
+</body>
+</html>

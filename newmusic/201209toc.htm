@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201209alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3067')"><span class="albumName">"Correct Behavior"</span>, by Eternal Summers</li>
+			<li onclick="moveToAlbum('3069')"><span class="albumName">"Gossamer"</span>, by Passion Pit</li>
+			<li onclick="moveToAlbum('2595')"><span class="albumName">"It's All Around You"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('3074')"><span class="albumName">"MariKKKopa / Backsell"</span>, by Desaparecidos</li>
+			<li onclick="moveToAlbum('3020')"><span class="albumName">"RE:GENERATION music project"</span>, by RE:GENERATION music project</li>
+			<li onclick="moveToAlbum('3072')"><span class="albumName">"Riposte"</span>, by Buke and Gass</li>
+			<li onclick="moveToAlbum('3075')"><span class="albumName">"Yankee Hotel Foxtrot"</span>, by Wilco</li>
+		</ul>
+	</div>
+</body>
+</html>

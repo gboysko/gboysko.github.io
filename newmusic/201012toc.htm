@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201012alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2797')"><span class="albumName">"Are You Experienced"</span>, by The Jimi Hendrix Experience</li>
+			<li onclick="moveToAlbum('2770')"><span class="albumName">"Crazy For You"</span>, by Best Coast</li>
+			<li onclick="moveToAlbum('2794')"><span class="albumName">"Led Zeppelin"</span>, by Led Zeppelin</li>
+			<li onclick="moveToAlbum('2798')"><span class="albumName">"Medications"</span>, by Medications</li>
+		</ul>
+	</div>
+</body>
+</html>

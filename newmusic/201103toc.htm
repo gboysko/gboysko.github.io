@@ -1,0 +1,52 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201103alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2839')"><span class="albumName">"21"</span>, by Adele</li>
+			<li onclick="moveToAlbum('1727')"><span class="albumName">"Ambient 1: Music for Airports"</span>, by Brian Eno</li>
+			<li onclick="moveToAlbum('2825')"><span class="albumName">"Angles"</span>, by The Strokes</li>
+			<li onclick="moveToAlbum('2840')"><span class="albumName">"Cape Dory"</span>, by Tennis</li>
+			<li onclick="moveToAlbum('2662')"><span class="albumName">"Favorite Worst Nightmare"</span>, by Arctic Monkeys</li>
+			<li onclick="moveToAlbum('1833')"><span class="albumName">"Fever To Tell"</span>, by Yeah Yeah Yeahs</li>
+			<li onclick="moveToAlbum('2837')"><span class="albumName">"Futureworld"</span>, by Trans Am</li>
+			<li onclick="moveToAlbum('2851')"><span class="albumName">"Go Live"</span>, by Jonsi</li>
+			<li onclick="moveToAlbum('2844')"><span class="albumName">"Gorilla Manor"</span>, by Local Natives</li>
+			<li onclick="moveToAlbum('2842')"><span class="albumName">"Guero"</span>, by Beck</li>
+			<li onclick="moveToAlbum('2663')"><span class="albumName">"Humbug"</span>, by Arctic Monkeys</li>
+			<li onclick="moveToAlbum('2829')"><span class="albumName">"IS IS"</span>, by Yeah Yeah Yeahs</li>
+			<li onclick="moveToAlbum('2832')"><span class="albumName">"It's Blitz!"</span>, by Yeah Yeah Yeahs</li>
+			<li onclick="moveToAlbum('2846')"><span class="albumName">"King of the Beach"</span>, by Wavves</li>
+			<li onclick="moveToAlbum('2843')"><span class="albumName">"Modern Guilt"</span>, by Beck</li>
+			<li onclick="moveToAlbum('2849')"><span class="albumName">"My Secret Public Journal Live"</span>, by Mike Birbiglia</li>
+			<li onclick="moveToAlbum('2821')"><span class="albumName">"No Color"</span>, by The Dodos</li>
+			<li onclick="moveToAlbum('1806')"><span class="albumName">"Room on Fire"</span>, by The Strokes</li>
+			<li onclick="moveToAlbum('2806')"><span class="albumName">"Sigh No More"</span>, by Mumford & Sons</li>
+			<li onclick="moveToAlbum('2823')"><span class="albumName">"Suck It and See"</span>, by Arctic Monkeys</li>
+			<li onclick="moveToAlbum('2848')"><span class="albumName">"Two Drink Mike"</span>, by Mike Birbiglia</li>
+			<li onclick="moveToAlbum('2855')"><span class="albumName">"Wavves"</span>, by Wavves</li>
+			<li onclick="moveToAlbum('2834')"><span class="albumName">"Wounded Rhymes"</span>, by Lykke Li</li>
+			<li onclick="moveToAlbum('2827')"><span class="albumName">"Yuck"</span>, by Yuck</li>
+		</ul>
+	</div>
+</body>
+</html>

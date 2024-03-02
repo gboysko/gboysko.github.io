@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200905alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1893')"><span class="albumName">"Bitte Orca"</span>, by Dirty Projectors</li>
+			<li onclick="moveToAlbum('1885')"><span class="albumName">"Blood Bank"</span>, by Bon Iver</li>
+			<li onclick="moveToAlbum('1875')"><span class="albumName">"Bromst"</span>, by Dan Deacon</li>
+			<li onclick="moveToAlbum('1878')"><span class="albumName">"Datarock Datarock"</span>, by Datarock</li>
+			<li onclick="moveToAlbum('1047')"><span class="albumName">"For Emma, Forever Ago"</span>, by Bon Iver</li>
+			<li onclick="moveToAlbum('1881')"><span class="albumName">"It's Frightening"</span>, by White Rabbits</li>
+			<li onclick="moveToAlbum('1879')"><span class="albumName">"King Baby"</span>, by Jim Gaffigan</li>
+			<li onclick="moveToAlbum('1883')"><span class="albumName">"Wavering Radiant"</span>, by Isis</li>
+			<li onclick="moveToAlbum('1871')"><span class="albumName">"Why There Are Mountains"</span>, by Cymbals Eat Guitars</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201405alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3229')"><span class="albumName">"Murmur"</span>, by R.E.M.</li>
+			<li onclick="moveToAlbum('3228')"><span class="albumName">"Old Fears"</span>, by School Of Language</li>
+			<li onclick="moveToAlbum('3230')"><span class="albumName">"Pony Express Record"</span>, by Shudder to Think</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201409alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3265')"><span class="albumName">"Inner Conflicts"</span>, by Billy Cobham</li>
+			<li onclick="moveToAlbum('3242')"><span class="albumName">"Lost In The Dream"</span>, by The War On Drugs</li>
+			<li onclick="moveToAlbum('3237')"><span class="albumName">"Repeater (Plus 3 Songs)"</span>, by Fugazi</li>
+			<li onclick="moveToAlbum('3241')"><span class="albumName">"Say Yes To Love"</span>, by Perfect Pussy</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200808alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('580')"><span class="albumName">"Bang Bang Rock & Roll"</span>, by Art Brut</li>
+			<li onclick="moveToAlbum('1471')"><span class="albumName">"Exile in Guyville"</span>, by Liz Phair</li>
+			<li onclick="moveToAlbum('2824')"><span class="albumName">"I Was Raised on Matthew, Mark, Luke & Laura"</span>, by PAS/CAL</li>
+			<li onclick="moveToAlbum('1575')"><span class="albumName">"LP3"</span>, by Ratatat</li>
+			<li onclick="moveToAlbum('1225')"><span class="albumName">"Robbers & Cowards"</span>, by Cold War Kids</li>
+			<li onclick="moveToAlbum('1576')"><span class="albumName">"Santogold"</span>, by Santogold</li>
+			<li onclick="moveToAlbum('1573')"><span class="albumName">"Stay Positive"</span>, by The Hold Steady</li>
+			<li onclick="moveToAlbum('1966')"><span class="albumName">"&dagger (Cross)"</span>, by Justice</li>
+		</ul>
+	</div>
+</body>
+</html>

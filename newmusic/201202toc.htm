@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201202alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3004')"><span class="albumName">"Attack On Memory"</span>, by Cloud Nothings</li>
+			<li onclick="moveToAlbum('3005')"><span class="albumName">"Permanent Waves"</span>, by Rush</li>
+			<li onclick="moveToAlbum('3001')"><span class="albumName">"Peter Gabriel (Scratch)"</span>, by Peter Gabriel</li>
+			<li onclick="moveToAlbum('2997')"><span class="albumName">"Relayer"</span>, by Yes</li>
+			<li onclick="moveToAlbum('2994')"><span class="albumName">"The Big Roar"</span>, by The Joy Formidable</li>
+			<li onclick="moveToAlbum('3007')"><span class="albumName">"Wish You Were Here"</span>, by Pink Floyd</li>
+		</ul>
+	</div>
+</body>
+</html>

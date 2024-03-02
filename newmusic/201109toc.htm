@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201109alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2961')"><span class="albumName">"Remain In Light"</span>, by Talking Heads</li>
+			<li onclick="moveToAlbum('2963')"><span class="albumName">"Strange Mercy"</span>, by St. Vincent</li>
+			<li onclick="moveToAlbum('2962')"><span class="albumName">"The Colour and the Shape"</span>, by Foo Fighters</li>
+			<li onclick="moveToAlbum('2958')"><span class="albumName">"The Dreaming"</span>, by Kate Bush</li>
+			<li onclick="moveToAlbum('2959')"><span class="albumName">"The Rip Tide"</span>, by Beirut</li>
+			<li onclick="moveToAlbum('2957')"><span class="albumName">"Tortoise"</span>, by Tortoise</li>
+		</ul>
+	</div>
+</body>
+</html>

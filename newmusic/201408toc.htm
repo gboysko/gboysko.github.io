@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201408alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3246')"><span class="albumName">"Boy"</span>, by U2</li>
+			<li onclick="moveToAlbum('3231')"><span class="albumName">"Drums Between The Bells"</span>, by Brian Eno</li>
+			<li onclick="moveToAlbum('3248')"><span class="albumName">"God Fodder"</span>, by Ned's Atomic Dustbin</li>
+			<li onclick="moveToAlbum('3247')"><span class="albumName">"Ill Communication"</span>, by Beastie Boys</li>
+			<li onclick="moveToAlbum('3233')"><span class="albumName">"In Evening Air"</span>, by Future Islands</li>
+			<li onclick="moveToAlbum('3235')"><span class="albumName">"LUX"</span>, by Brian Eno</li>
+			<li onclick="moveToAlbum('3242')"><span class="albumName">"Lost In The Dream"</span>, by The War On Drugs</li>
+			<li onclick="moveToAlbum('3240')"><span class="albumName">"Nobody's Smiling"</span>, by Common</li>
+			<li onclick="moveToAlbum('3264')"><span class="albumName">"Our Vinyl Weighs A Ton: This Is Stones Throw Records"</span>, by Stones Throw</li>
+			<li onclick="moveToAlbum('3230')"><span class="albumName">"Pony Express Record"</span>, by Shudder to Think</li>
+			<li onclick="moveToAlbum('3237')"><span class="albumName">"Repeater (Plus 3 Songs)"</span>, by Fugazi</li>
+			<li onclick="moveToAlbum('3241')"><span class="albumName">"Say Yes To Love"</span>, by Perfect Pussy</li>
+			<li onclick="moveToAlbum('303')"><span class="albumName">"The Egg"</span>, by Shiner</li>
+			<li onclick="moveToAlbum('3238')"><span class="albumName">"Weaves"</span>, by Weaves</li>
+		</ul>
+	</div>
+</body>
+</html>

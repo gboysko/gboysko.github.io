@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201104alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2876')"><span class="albumName">"Ain't No Rest for the Wicked"</span>, by Cage the Elephant</li>
+			<li onclick="moveToAlbum('2885')"><span class="albumName">"Changesbowie"</span>, by David Bowie</li>
+			<li onclick="moveToAlbum('2867')"><span class="albumName">"Experience Hendrix - The Best of Jimi Hendrix"</span>, by The Jimi Hendrix Experience</li>
+			<li onclick="moveToAlbum('1833')"><span class="albumName">"Fever To Tell"</span>, by Yeah Yeah Yeahs</li>
+			<li onclick="moveToAlbum('2837')"><span class="albumName">"Futureworld"</span>, by Trans Am</li>
+			<li onclick="moveToAlbum('2860')"><span class="albumName">"Goo"</span>, by Sonic Youth</li>
+			<li onclick="moveToAlbum('2842')"><span class="albumName">"Guero"</span>, by Beck</li>
+			<li onclick="moveToAlbum('2829')"><span class="albumName">"IS IS"</span>, by Yeah Yeah Yeahs</li>
+			<li onclick="moveToAlbum('2884')"><span class="albumName">"Juno - Music from the Motion Picture"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('2862')"><span class="albumName">"Live at the Grand Olympic Auditorium"</span>, by Rage Against the Machine</li>
+			<li onclick="moveToAlbum('1725')"><span class="albumName">"Lust For Life"</span>, by Iggy Pop</li>
+			<li onclick="moveToAlbum('2856')"><span class="albumName">"News of the World"</span>, by Queen</li>
+			<li onclick="moveToAlbum('2807')"><span class="albumName">"Peacock Collection"</span>, by Batwings Catwings</li>
+			<li onclick="moveToAlbum('2861')"><span class="albumName">"Renegades"</span>, by Rage Against the Machine</li>
+			<li onclick="moveToAlbum('2863')"><span class="albumName">"Sheer Heart Attack"</span>, by Queen</li>
+			<li onclick="moveToAlbum('1548')"><span class="albumName">"Show Your Bones"</span>, by Yeah Yeah Yeahs</li>
+			<li onclick="moveToAlbum('2865')"><span class="albumName">"Sleepwalk With Me Live"</span>, by Mike Birbiglia</li>
+			<li onclick="moveToAlbum('2823')"><span class="albumName">"Suck It and See"</span>, by Arctic Monkeys</li>
+			<li onclick="moveToAlbum('2883')"><span class="albumName">"Surfing the Void"</span>, by Klaxons</li>
+			<li onclick="moveToAlbum('2881')"><span class="albumName">"The Very Best of the Doors"</span>, by The Doors</li>
+			<li onclick="moveToAlbum('2848')"><span class="albumName">"Two Drink Mike"</span>, by Mike Birbiglia</li>
+			<li onclick="moveToAlbum('2875')"><span class="albumName">"White Album"</span>, by The Beatles</li>
+			<li onclick="moveToAlbum('2834')"><span class="albumName">"Wounded Rhymes"</span>, by Lykke Li</li>
+			<li onclick="moveToAlbum('2878')"><span class="albumName">"You Are Free"</span>, by Cat Power</li>
+			<li onclick="moveToAlbum('2882')"><span class="albumName">"Younger Us"</span>, by Japandroids</li>
+		</ul>
+	</div>
+</body>
+</html>

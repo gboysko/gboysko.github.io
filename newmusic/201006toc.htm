@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201006alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2644')"><span class="albumName">"Astro Coast"</span>, by Surfer Blood</li>
+			<li onclick="moveToAlbum('2654')"><span class="albumName">"Big Echo"</span>, by Morning Benders</li>
+			<li onclick="moveToAlbum('2659')"><span class="albumName">"Cantaloupe Island"</span>, by Herbie Hancock</li>
+			<li onclick="moveToAlbum('2639')"><span class="albumName">"Champ"</span>, by Tokyo Police Club</li>
+			<li onclick="moveToAlbum('2651')"><span class="albumName">"High Violet"</span>, by The National</li>
+			<li onclick="moveToAlbum('2661')"><span class="albumName">"Hold Me Down"</span>, by Sia</li>
+			<li onclick="moveToAlbum('2660')"><span class="albumName">"InnerSpeaker"</span>, by Tame Impala</li>
+			<li onclick="moveToAlbum('1734')"><span class="albumName">"Middle Cyclone"</span>, by Neko Case</li>
+		</ul>
+	</div>
+</body>
+</html>

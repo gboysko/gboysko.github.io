@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200902alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1458')"><span class="albumName">"Brotherhood"</span>, by New Order</li>
+			<li onclick="moveToAlbum('1713')"><span class="albumName">"Conor Oberst"</span>, by Conor Oberst</li>
+			<li onclick="moveToAlbum('1740')"><span class="albumName">"Evil Empire"</span>, by Rage Against the Machine</li>
+			<li onclick="moveToAlbum('1719')"><span class="albumName">"Friendly Fires"</span>, by Friendly Fires</li>
+			<li onclick="moveToAlbum('1737')"><span class="albumName">"Get Guilty"</span>, by A.C. Newman</li>
+			<li onclick="moveToAlbum('1712')"><span class="albumName">"In Ear Park"</span>, by Department of Eagles</li>
+			<li onclick="moveToAlbum('1457')"><span class="albumName">"Low-life"</span>, by New Order</li>
+			<li onclick="moveToAlbum('1742')"><span class="albumName">"Master Strokes: 1978-1985"</span>, by Bill Bruford</li>
+			<li onclick="moveToAlbum('1745')"><span class="albumName">"Odelay"</span>, by Beck</li>
+			<li onclick="moveToAlbum('1739')"><span class="albumName">"Planet Rock: The Album"</span>, by Afrika Bambaataa Zulu Nation Soul Sonic Force</li>
+			<li onclick="moveToAlbum('1735')"><span class="albumName">"Volume One"</span>, by She & Him</li>
+		</ul>
+	</div>
+</body>
+</html>

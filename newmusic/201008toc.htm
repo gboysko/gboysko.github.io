@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201008alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2738')"><span class="albumName">"A Lazarus Taxon"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('2726')"><span class="albumName">"Asthmatic Kitty Digital Sampler, August 2010"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('2654')"><span class="albumName">"Big Echo"</span>, by Morning Benders</li>
+			<li onclick="moveToAlbum('2730')"><span class="albumName">"Glass: String Quartets Nos. 1-4"</span>, by Carducci String Quartet</li>
+			<li onclick="moveToAlbum('2737')"><span class="albumName">"Root for Ruin"</span>, by Les Savy Fav</li>
+			<li onclick="moveToAlbum('2729')"><span class="albumName">"TNT"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('2736')"><span class="albumName">"The Orchard"</span>, by Ra Ra Riot</li>
+			<li onclick="moveToAlbum('2727')"><span class="albumName">"The Suburbs"</span>, by Arcade Fire</li>
+			<li onclick="moveToAlbum('2700')"><span class="albumName">"Treats"</span>, by Sleigh Bells</li>
+		</ul>
+	</div>
+</body>
+</html>

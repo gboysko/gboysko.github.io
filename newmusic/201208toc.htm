@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201208alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3070')"><span class="albumName">"Civilian"</span>, by Wye Oak</li>
+			<li onclick="moveToAlbum('3067')"><span class="albumName">"Correct Behavior"</span>, by Eternal Summers</li>
+			<li onclick="moveToAlbum('3069')"><span class="albumName">"Gossamer"</span>, by Passion Pit</li>
+			<li onclick="moveToAlbum('2595')"><span class="albumName">"It's All Around You"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('3068')"><span class="albumName">"Master of My Make-Believe"</span>, by Santigold</li>
+			<li onclick="moveToAlbum('2834')"><span class="albumName">"Wounded Rhymes"</span>, by Lykke Li</li>
+		</ul>
+	</div>
+</body>
+</html>

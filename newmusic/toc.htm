@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "albums.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1921')"><span class="albumName">"Post-Nothing"</span>, by Japandroids</li>
+			<li onclick="moveToAlbum('1930')"><span class="albumName">"The Queen Is Dead"</span>, by The Smiths</li>
+			<li onclick="moveToAlbum('1937')"><span class="albumName">"Travels With Myself And Another"</span>, by Future of the Left</li>
+		</ul>
+	</div>
+</body>
+</html>

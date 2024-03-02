@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201410alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1605')"><span class="albumName">"Madvillainy 2: The Madlib Remix"</span>, by Madvillain</li>
+			<li onclick="moveToAlbum('3272')"><span class="albumName">"Shields: B-Sides"</span>, by Grizzly Bear</li>
+			<li onclick="moveToAlbum('3270')"><span class="albumName">"Take Me To Your Leader"</span>, by King Geedorah</li>
+			<li onclick="moveToAlbum('3273')"><span class="albumName">"Wolf City"</span>, by Amon Düül 2</li>
+		</ul>
+	</div>
+</body>
+</html>

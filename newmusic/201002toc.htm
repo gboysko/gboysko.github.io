@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201002alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2585')"><span class="albumName">"Bad Veins"</span>, by Bad Veins</li>
+			<li onclick="moveToAlbum('2598')"><span class="albumName">"Beacons of Ancestorship"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('2602')"><span class="albumName">"Fall Be Kind"</span>, by Animal Collective</li>
+			<li onclick="moveToAlbum('2595')"><span class="albumName">"It's All Around You"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('2498')"><span class="albumName">"Let's Build a Fire"</span>, by Plus Minus</li>
+			<li onclick="moveToAlbum('1897')"><span class="albumName">"Manners"</span>, by Passion Pit</li>
+			<li onclick="moveToAlbum('2582')"><span class="albumName">"Paul's Tomb: A Triumph"</span>, by Frog Eyes</li>
+			<li onclick="moveToAlbum('2592')"><span class="albumName">"Phrazes For The Young"</span>, by Julian Casablancas</li>
+			<li onclick="moveToAlbum('2589')"><span class="albumName">"Romance Is Boring"</span>, by Los Campesinos!</li>
+			<li onclick="moveToAlbum('2593')"><span class="albumName">"Singles"</span>, by Travis</li>
+			<li onclick="moveToAlbum('2583')"><span class="albumName">"Substance"</span>, by Joy Division</li>
+			<li onclick="moveToAlbum('2587')"><span class="albumName">"Teen Dream"</span>, by Beach House</li>
+			<li onclick="moveToAlbum('2600')"><span class="albumName">"Together"</span>, by The New Pornographers</li>
+			<li onclick="moveToAlbum('2596')"><span class="albumName">"Transference"</span>, by Spoon</li>
+			<li onclick="moveToAlbum('2564')"><span class="albumName">"Work"</span>, by Shout Out Louds</li>
+			<li onclick="moveToAlbum('2590')"><span class="albumName">"You Could Have It So Much Better"</span>, by Franz Ferdinand</li>
+			<li onclick="moveToAlbum('1967')"><span class="albumName">"xx"</span>, by The xx</li>
+		</ul>
+	</div>
+</body>
+</html>

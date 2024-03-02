@@ -1,0 +1,33 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201108alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2949')"><span class="albumName">"Bon Iver"</span>, by Bon Iver</li>
+			<li onclick="moveToAlbum('2950')"><span class="albumName">"Closer to Closed"</span>, by Braid</li>
+			<li onclick="moveToAlbum('2895')"><span class="albumName">"Hot Sauce Committee Part Two"</span>, by Beastie Boys</li>
+			<li onclick="moveToAlbum('2954')"><span class="albumName">"Mellon Collie And The Infinite Sadness"</span>, by Smashing Pumpkins</li>
+			<li onclick="moveToAlbum('2955')"><span class="albumName">"Nat King Cole, Vol.1 (Wonderful Nat King Cole)"</span>, by Nat King Cole</li>
+		</ul>
+	</div>
+</body>
+</html>

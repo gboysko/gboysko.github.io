@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200903alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1715')"><span class="albumName">"Bright Ideas"</span>, by Portastatic</li>
+			<li onclick="moveToAlbum('1719')"><span class="albumName">"Friendly Fires"</span>, by Friendly Fires</li>
+			<li onclick="moveToAlbum('1750')"><span class="albumName">"Hold Time"</span>, by M. Ward</li>
+			<li onclick="moveToAlbum('1747')"><span class="albumName">"Mama, I'm Swollen"</span>, by Cursive</li>
+			<li onclick="moveToAlbum('1759')"><span class="albumName">"Merriweather Post Pavilion"</span>, by Animal Collective</li>
+			<li onclick="moveToAlbum('1758')"><span class="albumName">"Music Is The Weapon Of The Future"</span>, by Fela Kuti</li>
+			<li onclick="moveToAlbum('1600')"><span class="albumName">"Narrow Stairs"</span>, by Death Cab for Cutie</li>
+			<li onclick="moveToAlbum('1215')"><span class="albumName">"Ra Ra Riot"</span>, by Ra Ra Riot</li>
+			<li onclick="moveToAlbum('1253')"><span class="albumName">"Tears of the Valedictorian"</span>, by Frog Eyes</li>
+			<li onclick="moveToAlbum('1761')"><span class="albumName">"The Anthology"</span>, by Return to Forever</li>
+			<li onclick="moveToAlbum('1752')"><span class="albumName">"The Execution of All Things"</span>, by Rilo Kiley</li>
+			<li onclick="moveToAlbum('1292')"><span class="albumName">"The View From This Tower"</span>, by Faraquet</li>
+		</ul>
+	</div>
+</body>
+</html>

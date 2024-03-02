@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201309alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3132')"><span class="albumName">"2112"</span>, by Rush</li>
+			<li onclick="moveToAlbum('3135')"><span class="albumName">"AM"</span>, by Arctic Monkeys</li>
+			<li onclick="moveToAlbum('3133')"><span class="albumName">"Hesitation Marks"</span>, by Nine Inch Nails</li>
+		</ul>
+	</div>
+</body>
+</html>

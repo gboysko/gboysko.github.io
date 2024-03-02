@@ -1,0 +1,131 @@
+/*
+ * For Color Scheme, see http://colorschemedesigner.com/#0011Tw0w0w0w0
+ */
+ 
+body {
+	font-family: Book Antiqua, Bookman Old Style;
+	font-size: 2em;
+	background-color: #BFA46F;
+	margin: 0;
+	padding: 0;
+}
+
+.content {
+	width: 80%;
+	margin: auto;
+	color: #a67924;
+}
+
+.header {
+	background-color: #FFCE70;
+	color: #a67924;
+	margin: 0 0 0.1em;
+	padding: 0;
+}
+
+.nmots {
+	font-size: 1em;
+	width: 125px;
+	font-variant: small-caps;
+	font-weight: 500;
+	background-color: #a67924;
+	padding: 0 0.7em;
+	text-align: center;
+	color: #ffe4b1;
+}
+
+.monthCell {
+	text-align: center;
+	padding: 0.1em;
+	font-size: 3em;
+}
+
+.monthLink {
+	cursor: pointer;
+}
+
+.toc {
+	font-size: 0.5em;
+	background-color: #a67924;
+	color: #ffe4b1;
+}
+
+.toc p {
+	font-weight: 900;
+	text-decoration: underline;
+	padding: 0.5em 0 0 1em;
+	margin: 0;
+	font-size: 0.9em;
+	border-bottom: 0.1em solid #a67924;
+}
+
+.toc ul {
+	padding: 0.5em;
+	margin: 0;
+}
+
+.toc li {
+	list-style: none;
+	font-size: 0.8em;
+	padding: 0.25em;
+}
+
+.toc li.hover {
+	background-color: #FFCE70;
+	color: 000;
+}
+
+.toc a:link, .toc a:visited , .toc a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+.toc .albumName {
+	font-style: italic;
+}
+
+.albums {
+	background-color: #ffe4b1;
+	padding: 0.5em;
+}
+
+.albums .album .title {
+	font-size: 0.7em;
+	padding: 1em 0 0.25em 0;
+}
+
+.albums .album  .title .albumName {
+	font-style: italic;
+}
+
+.albums .album .title .bandName {
+}
+
+.albums .album .title .relDate {
+	font-size: 0.5em;
+}
+
+.albums .album .details .art {
+	vertical-align: top;
+}
+
+.albums .album .details .art IMG {
+	width:  150px;
+	height: 150px;
+}
+
+.albums .album .details .tracks {
+	vertical-align: top;
+}
+
+.albums .album .details .tracks td {
+	font-size: 0.8em;
+}
+
+hr.albumSep {
+	display: none;
+	width: 80%;
+	background: transparent url(Nour_Malaeb_Equalizer.png) no-repeat scroll center center;
+	height: 16px;
+	border: 0 none;	
+}

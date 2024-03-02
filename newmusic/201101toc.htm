@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201101alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2802')"><span class="albumName">"A Night at the Opera"</span>, by Queen</li>
+			<li onclick="moveToAlbum('2762')"><span class="albumName">"Anthology 1997-98"</span>, by Faraquet</li>
+			<li onclick="moveToAlbum('2770')"><span class="albumName">"Crazy For You"</span>, by Best Coast</li>
+			<li onclick="moveToAlbum('2807')"><span class="albumName">"Peacock Collection"</span>, by Batwings Catwings</li>
+			<li onclick="moveToAlbum('2759')"><span class="albumName">"Sea Of Cowards"</span>, by The Dead Weather</li>
+			<li onclick="moveToAlbum('2811')"><span class="albumName">"Sgt. Pepper's Lonely Hearts Club Band"</span>, by The Beatles</li>
+			<li onclick="moveToAlbum('2806')"><span class="albumName">"Sigh No More"</span>, by Mumford & Sons</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200911alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2550')"><span class="albumName">"Noble Jolley's Album"</span>, by Noble Jolley</li>
+			<li onclick="moveToAlbum('1189')"><span class="albumName">"Oracular Spectacular"</span>, by MGMT</li>
+			<li onclick="moveToAlbum('2552')"><span class="albumName">"Standards"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('2551')"><span class="albumName">"Tonight: Franz Ferdinand"</span>, by Franz Ferdinand</li>
+			<li onclick="moveToAlbum('2549')"><span class="albumName">"Where the Wild Things Are"</span>, by Karen O. & the Kids</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201107alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2895')"><span class="albumName">"Hot Sauce Committee Part Two"</span>, by Beastie Boys</li>
+			<li onclick="moveToAlbum('2916')"><span class="albumName">"thickfreakness"</span>, by The Black Keys</li>
+		</ul>
+	</div>
+</body>
+</html>

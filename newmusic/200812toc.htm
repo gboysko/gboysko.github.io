@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200812alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1702')"><span class="albumName">"A Series of Sneaks"</span>, by Spoon</li>
+			<li onclick="moveToAlbum('1704')"><span class="albumName">"Fall 2008 Tour"</span>, by Ra Ra Riot</li>
+			<li onclick="moveToAlbum('1701')"><span class="albumName">"Ladyhawke"</span>, by Ladyhawke</li>
+			<li onclick="moveToAlbum('1687')"><span class="albumName">"Microcastle"</span>, by Deerhunter</li>
+		</ul>
+	</div>
+</body>
+</html>

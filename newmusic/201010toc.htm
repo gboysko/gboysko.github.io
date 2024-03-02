@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201010alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2773')"><span class="albumName">"All Delighted People"</span>, by Sufjan Stevens</li>
+			<li onclick="moveToAlbum('2762')"><span class="albumName">"Anthology 1997-98"</span>, by Faraquet</li>
+			<li onclick="moveToAlbum('2668')"><span class="albumName">"Brothers"</span>, by The Black Keys</li>
+			<li onclick="moveToAlbum('2772')"><span class="albumName">"Dark Night Of The Soul"</span>, by Danger Mouse, Sparklehorse</li>
+			<li onclick="moveToAlbum('2757')"><span class="albumName">"Halcyon Digest"</span>, by Deerhunter</li>
+			<li onclick="moveToAlbum('2776')"><span class="albumName">"Know Better Learn Faster"</span>, by Thao With the Get Down Stay Down</li>
+			<li onclick="moveToAlbum('2778')"><span class="albumName">"Marathon"</span>, by Tennis</li>
+			<li onclick="moveToAlbum('2764')"><span class="albumName">"Rolling Blackouts"</span>, by The Go! Team</li>
+			<li onclick="moveToAlbum('2760')"><span class="albumName">"Rubber Factory"</span>, by The Black Keys</li>
+			<li onclick="moveToAlbum('2759')"><span class="albumName">"Sea Of Cowards"</span>, by The Dead Weather</li>
+			<li onclick="moveToAlbum('2777')"><span class="albumName">"South Carolina"</span>, by Tennis</li>
+			<li onclick="moveToAlbum('2753')"><span class="albumName">"The Age of Adz"</span>, by Sufjan Stevens</li>
+			<li onclick="moveToAlbum('2809')"><span class="albumName">"Write About Love"</span>, by Belle & Sebastian</li>
+		</ul>
+	</div>
+</body>
+</html>

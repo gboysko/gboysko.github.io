@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201204alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3037')"><span class="albumName">"Around the Well"</span>, by Iron & Wine</li>
+			<li onclick="moveToAlbum('3025')"><span class="albumName">"Bird-Brains"</span>, by tUnE-yArDs</li>
+			<li onclick="moveToAlbum('3041')"><span class="albumName">"Camp"</span>, by Childish Gambino</li>
+			<li onclick="moveToAlbum('2980')"><span class="albumName">"Ceremonials"</span>, by Florence + The Machine</li>
+			<li onclick="moveToAlbum('3036')"><span class="albumName">"Complete & Unbelievable: The Otis Redding Dictionary of Soul [Vinyl]"</span>, by Otis Redding</li>
+			<li onclick="moveToAlbum('3022')"><span class="albumName">"Cults"</span>, by Cults</li>
+			<li onclick="moveToAlbum('3034')"><span class="albumName">"D-D-Don't Don't Stop the Beat"</span>, by Junior Senior</li>
+			<li onclick="moveToAlbum('3024')"><span class="albumName">"Don't Upset the Rhythm"</span>, by Noisettes</li>
+			<li onclick="moveToAlbum('3040')"><span class="albumName">"Fate"</span>, by Dr. Dog</li>
+			<li onclick="moveToAlbum('3039')"><span class="albumName">"Ghost"</span>, by Radical Face</li>
+			<li onclick="moveToAlbum('3030')"><span class="albumName">"Moving Pictures"</span>, by Rush</li>
+			<li onclick="moveToAlbum('3032')"><span class="albumName">"Port Of Morrow"</span>, by The Shins</li>
+			<li onclick="moveToAlbum('3033')"><span class="albumName">"Rhino Hi-Five: The MC5"</span>, by MC5</li>
+			<li onclick="moveToAlbum('3028')"><span class="albumName">"Tourist History"</span>, by Two Door Cinema Club</li>
+			<li onclick="moveToAlbum('3031')"><span class="albumName">"Upper Class Complexity"</span>, by The Yellow Dogs</li>
+			<li onclick="moveToAlbum('3038')"><span class="albumName">"Way to Normal"</span>, by Ben Folds</li>
+			<li onclick="moveToAlbum('3027')"><span class="albumName">"w h o k i l l"</span>, by tUnE-yArDs</li>
+		</ul>
+	</div>
+</body>
+</html>

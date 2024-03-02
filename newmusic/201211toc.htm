@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201211alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3086')"><span class="albumName">"Allelujah! Don't Bend! Ascend!"</span>, by Godspeed, You Black Emperor!</li>
+			<li onclick="moveToAlbum('3051')"><span class="albumName">"Check Your Head"</span>, by Beastie Boys</li>
+			<li onclick="moveToAlbum('3076')"><span class="albumName">"Disc for Glenn"</span>, by Gringo</li>
+			<li onclick="moveToAlbum('3079')"><span class="albumName">"Guards"</span>, by Guards</li>
+			<li onclick="moveToAlbum('2595')"><span class="albumName">"It's All Around You"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('3084')"><span class="albumName">"Shields"</span>, by Grizzly Bear</li>
+			<li onclick="moveToAlbum('3082')"><span class="albumName">"Silver & Gold"</span>, by Sufjan Stevens</li>
+			<li onclick="moveToAlbum('3077')"><span class="albumName">"When We Break"</span>, by Criteria</li>
+		</ul>
+	</div>
+</body>
+</html>

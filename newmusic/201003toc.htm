@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201003alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2580')"><span class="albumName">"Album"</span>, by Girls</li>
+			<li onclick="moveToAlbum('2631')"><span class="albumName">"Fang Island"</span>, by Fang Island</li>
+			<li onclick="moveToAlbum('2604')"><span class="albumName">"Fantasies"</span>, by Metric</li>
+			<li onclick="moveToAlbum('2629')"><span class="albumName">"First Impressions Of Earth"</span>, by The Strokes</li>
+			<li onclick="moveToAlbum('1478')"><span class="albumName">"Give Up"</span>, by The Postal Service</li>
+			<li onclick="moveToAlbum('2605')"><span class="albumName">"Glasvegas"</span>, by Glasvegas</li>
+			<li onclick="moveToAlbum('1930')"><span class="albumName">"Hospice"</span>, by The Antlers</li>
+			<li onclick="moveToAlbum('2633')"><span class="albumName">"Power, Corruption & Lies [Collector's Edition]"</span>, by New Order</li>
+			<li onclick="moveToAlbum('2635')"><span class="albumName">"Rounds"</span>, by Four Tet</li>
+			<li onclick="moveToAlbum('2606')"><span class="albumName">"Shaka Rock"</span>, by JET</li>
+			<li onclick="moveToAlbum('2634')"><span class="albumName">"The Magician’s Private Library"</span>, by Holly Miranda</li>
+			<li onclick="moveToAlbum('2532')"><span class="albumName">"The Pains Of Being Pure At Heart"</span>, by The Pains of Being Pure at Heart</li>
+			<li onclick="moveToAlbum('2632')"><span class="albumName">"The Sound Of The Smiths"</span>, by The Smiths</li>
+		</ul>
+	</div>
+</body>
+</html>

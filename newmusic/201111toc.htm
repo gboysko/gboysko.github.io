@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201111alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2989')"><span class="albumName">"Barsuk Records Summer 2011 Amazon MP3 Sampler"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('2980')"><span class="albumName">"Ceremonials"</span>, by Florence + The Machine</li>
+			<li onclick="moveToAlbum('1724')"><span class="albumName">"Heroes"</span>, by David Bowie</li>
+			<li onclick="moveToAlbum('2987')"><span class="albumName">"Kill Rock Stars 20 Year Anniversary Sampler"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('2986')"><span class="albumName">"Live on Jimmy Fallon"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('2988')"><span class="albumName">"Merge Records 2011 Sampler"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('2984')"><span class="albumName">"Y"</span>, by The Pop Group</li>
+		</ul>
+	</div>
+</body>
+</html>

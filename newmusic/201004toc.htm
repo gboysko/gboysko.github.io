@@ -1,0 +1,38 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201004alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2639')"><span class="albumName">"Champ"</span>, by Tokyo Police Club</li>
+			<li onclick="moveToAlbum('2631')"><span class="albumName">"Fang Island"</span>, by Fang Island</li>
+			<li onclick="moveToAlbum('2629')"><span class="albumName">"First Impressions Of Earth"</span>, by The Strokes</li>
+			<li onclick="moveToAlbum('1478')"><span class="albumName">"Give Up"</span>, by The Postal Service</li>
+			<li onclick="moveToAlbum('2643')"><span class="albumName">"In the Court of the Wrestling Let's"</span>, by Let's Wrestle</li>
+			<li onclick="moveToAlbum('1897')"><span class="albumName">"Manners"</span>, by Passion Pit</li>
+			<li onclick="moveToAlbum('1919')"><span class="albumName">"Off The Wall"</span>, by Michael Jackson</li>
+			<li onclick="moveToAlbum('2596')"><span class="albumName">"Transference"</span>, by Spoon</li>
+			<li onclick="moveToAlbum('2642')"><span class="albumName">"Two Thousand And Ten Injuries"</span>, by Love Is All</li>
+			<li onclick="moveToAlbum('2564')"><span class="albumName">"Work"</span>, by Shout Out Louds</li>
+		</ul>
+	</div>
+</body>
+</html>

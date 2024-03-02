@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200909alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1974')"><span class="albumName">"19"</span>, by Adele</li>
+			<li onclick="moveToAlbum('1954')"><span class="albumName">"Birds Of Fire"</span>, by The Mahavishnu Orchestra</li>
+			<li onclick="moveToAlbum('1972')"><span class="albumName">"Bows + Arrows"</span>, by The Walkmen</li>
+			<li onclick="moveToAlbum('1947')"><span class="albumName">"Count Basie 1937-1943"</span>, by Count Basie</li>
+			<li onclick="moveToAlbum('1412')"><span class="albumName">"Forbidden Love"</span>, by Death Cab for Cutie</li>
+			<li onclick="moveToAlbum('1945')"><span class="albumName">"Heavy Weather"</span>, by Weather Report</li>
+			<li onclick="moveToAlbum('1961')"><span class="albumName">"Lush Life"</span>, by John Coltrane</li>
+			<li onclick="moveToAlbum('1964')"><span class="albumName">"Me And Armini"</span>, by Emiliana Torrini</li>
+			<li onclick="moveToAlbum('1969')"><span class="albumName">"Millions Now Living Will Never Die"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('1959')"><span class="albumName">"Nefertiti"</span>, by Miles Davis</li>
+			<li onclick="moveToAlbum('1962')"><span class="albumName">"Now We Can See"</span>, by The Thermals</li>
+			<li onclick="moveToAlbum('1948')"><span class="albumName">"Plays Duke Ellington"</span>, by Thelonious Monk</li>
+			<li onclick="moveToAlbum('1956')"><span class="albumName">"Raining On The Moon"</span>, by William Parker</li>
+			<li onclick="moveToAlbum('1975')"><span class="albumName">"Some People Have Real Problems"</span>, by Sia</li>
+			<li onclick="moveToAlbum('1413')"><span class="albumName">"Somthing About Airplanes"</span>, by Death Cab for Cutie</li>
+			<li onclick="moveToAlbum('1952')"><span class="albumName">"The Art Tatum Solo Masterpieces Volume 1"</span>, by Art Tatum</li>
+			<li onclick="moveToAlbum('1941')"><span class="albumName">"Time Out"</span>, by Dave Brubeck</li>
+			<li onclick="moveToAlbum('1943')"><span class="albumName">"Tomorrow Is The Question"</span>, by Ornette Coleman</li>
+			<li onclick="moveToAlbum('1925')"><span class="albumName">"Travels With Myself And Another"</span>, by Future Of The Left</li>
+			<li onclick="moveToAlbum('1950')"><span class="albumName">"Way Out West"</span>, by Sonny Rollins</li>
+			<li onclick="moveToAlbum('1963')"><span class="albumName">"Whatever People Say I Am, That's What I'm Not"</span>, by Arctic Monkeys</li>
+			<li onclick="moveToAlbum('1967')"><span class="albumName">"xx"</span>, by The xx</li>
+			<li onclick="moveToAlbum('1966')"><span class="albumName">"† (Cross)"</span>, by Justice</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200906alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1888')"><span class="albumName">"Actor"</span>, by St. Vincent</li>
+			<li onclick="moveToAlbum('1892')"><span class="albumName">"Art Brut vs. Satan"</span>, by Art Brut</li>
+			<li onclick="moveToAlbum('1893')"><span class="albumName">"Bitte Orca"</span>, by Dirty Projectors</li>
+			<li onclick="moveToAlbum('1900')"><span class="albumName">"Dark Was The Night"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('1896')"><span class="albumName">"Foxtrot"</span>, by Genesis</li>
+			<li onclick="moveToAlbum('1898')"><span class="albumName">"In Prism"</span>, by Polvo</li>
+			<li onclick="moveToAlbum('1897')"><span class="albumName">"Manners"</span>, by Passion Pit</li>
+			<li onclick="moveToAlbum('1891')"><span class="albumName">"Rise Above"</span>, by Dirty Projectors</li>
+			<li onclick="moveToAlbum('1882')"><span class="albumName">"Wolfgang Amadeus Phoenix"</span>, by Phoenix</li>
+		</ul>
+	</div>
+</body>
+</html>

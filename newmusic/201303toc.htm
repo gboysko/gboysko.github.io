@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201303alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3067')"><span class="albumName">"Correct Behavior"</span>, by Eternal Summers</li>
+			<li onclick="moveToAlbum('3101')"><span class="albumName">"Know Better Learn Faster"</span>, by Thao & The Get Down Stay Down</li>
+			<li onclick="moveToAlbum('3096')"><span class="albumName">"Light Up Gold"</span>, by Parquet Courts</li>
+			<li onclick="moveToAlbum('3106')"><span class="albumName">"SXSW 2013 Sampler"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('3103')"><span class="albumName">"Stones Throw Podcast"</span>, by </li>
+			<li onclick="moveToAlbum('3099')"><span class="albumName">"Thao & Mirah"</span>, by Thao & Mirah</li>
+			<li onclick="moveToAlbum('3102')"><span class="albumName">"The Next Day"</span>, by David Bowie</li>
+			<li onclick="moveToAlbum('3100')"><span class="albumName">"We the Common"</span>, by Thao & The Get Down Stay Down</li>
+		</ul>
+	</div>
+</body>
+</html>

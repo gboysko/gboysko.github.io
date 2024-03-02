@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200912alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2570')"><span class="albumName">"Cab Calloway / Minnie The Moocher"</span>, by Cab Calloway & His Orchestra</li>
+			<li onclick="moveToAlbum('2568')"><span class="albumName">"Conditions"</span>, by The Temper Trap</li>
+			<li onclick="moveToAlbum('2566')"><span class="albumName">"Kind Of Blue"</span>, by Miles Davis</li>
+			<li onclick="moveToAlbum('2565')"><span class="albumName">"LP 3 M1"</span>, by Shy Child</li>
+			<li onclick="moveToAlbum('2563')"><span class="albumName">"The Brutalist Bricks"</span>, by Ted Leo & the Pharmacists</li>
+			<li onclick="moveToAlbum('2564')"><span class="albumName">"Work"</span>, by Shout Out Louds</li>
+			<li onclick="moveToAlbum('1324')"><span class="albumName">"You Forgot It In People"</span>, by Broken Social Scene</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201302alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('363')"><span class="albumName">"Change"</span>, by The Dismemberment Plan</li>
+			<li onclick="moveToAlbum('3097')"><span class="albumName">"General Dome"</span>, by Buke And Gase</li>
+		</ul>
+	</div>
+</body>
+</html>

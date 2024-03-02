@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200811alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1630')"><span class="albumName">"A Guide to Love, Loss & Desperation"</span>, by The Wombats</li>
+			<li onclick="moveToAlbum('1702')"><span class="albumName">"A Series of Sneaks"</span>, by Spoon</li>
+			<li onclick="moveToAlbum('1633')"><span class="albumName">"Army Navy"</span>, by Army Navy</li>
+			<li onclick="moveToAlbum('1632')"><span class="albumName">"Brain Thrust Mastery"</span>, by We Are Scientists</li>
+			<li onclick="moveToAlbum('1615')"><span class="albumName">"Car Alarm"</span>, by The Sea and Cake</li>
+			<li onclick="moveToAlbum('1610')"><span class="albumName">"Chin Up Chin Up"</span>, by Chin Up Chin Up</li>
+			<li onclick="moveToAlbum('1598')"><span class="albumName">"Costello Music"</span>, by The Fratellis</li>
+			<li onclick="moveToAlbum('1478')"><span class="albumName">"Give Up"</span>, by The Postal Service</li>
+			<li onclick="moveToAlbum('1623')"><span class="albumName">"Made of Bricks"</span>, by Kate Nash</li>
+			<li onclick="moveToAlbum('1688')"><span class="albumName">"Matador Singles '08"</span>, by Jay Reatard</li>
+			<li onclick="moveToAlbum('1687')"><span class="albumName">"Microcastle"</span>, by Deerhunter</li>
+			<li onclick="moveToAlbum('1689')"><span class="albumName">"September 000"</span>, by Secret Machines</li>
+			<li onclick="moveToAlbum('1612')"><span class="albumName">"Skeletal Lamping"</span>, by Of Montreal</li>
+			<li onclick="moveToAlbum('1613')"><span class="albumName">"So Jealous"</span>, by Tegan & Sara</li>
+			<li onclick="moveToAlbum('1250')"><span class="albumName">"Summer in Abaddon"</span>, by Pinback</li>
+			<li onclick="moveToAlbum('1627')"><span class="albumName">"The Fratellis"</span>, by The Fratellis</li>
+			<li onclick="moveToAlbum('1603')"><span class="albumName">"The Stand Ins"</span>, by Okkervil River</li>
+			<li onclick="moveToAlbum('1694')"><span class="albumName">"This Is It and I Am It and You Are It and So Is That and He Is It And She I"</span>, by Marnie Stern</li>
+			<li onclick="moveToAlbum('1570')"><span class="albumName">"Vampire Weekend"</span>, by Vampire Weekend</li>
+			<li onclick="moveToAlbum('1629')"><span class="albumName">"We Started Nothing"</span>, by The Ting Tings</li>
+			<li onclick="moveToAlbum('1572')"><span class="albumName">"With Love and Squalor"</span>, by We Are Scientists</li>
+			<li onclick="moveToAlbum('1616')"><span class="albumName">"Xs on Your Eyes"</span>, by Plus Minus</li>
+		</ul>
+	</div>
+</body>
+</html>

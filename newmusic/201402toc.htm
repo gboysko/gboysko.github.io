@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201402alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3156')"><span class="albumName">"Emergency!"</span>, by Tony Williams</li>
+			<li onclick="moveToAlbum('3157')"><span class="albumName">"Major Arcana"</span>, by Speedy Ortiz</li>
+			<li onclick="moveToAlbum('3158')"><span class="albumName">"PV Digest"</span>, by Various Artists</li>
+		</ul>
+	</div>
+</body>
+</html>

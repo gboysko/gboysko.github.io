@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "200810alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('1606')"><span class="albumName">"Hold on Now, Youngster..."</span>, by Los Campesinos!</li>
+			<li onclick="moveToAlbum('1605')"><span class="albumName">"Madvillainy 2: The Madlib Remix"</span>, by Madvillain</li>
+			<li onclick="moveToAlbum('1588')"><span class="albumName">"The Rhumb Line"</span>, by Ra Ra Riot</li>
+			<li onclick="moveToAlbum('1603')"><span class="albumName">"The Stand Ins"</span>, by Okkervil River</li>
+			<li onclick="moveToAlbum('1590')"><span class="albumName">"Waited Up Til It Was Light"</span>, by Johnny Foreigner</li>
+			<li onclick="moveToAlbum('1314')"><span class="albumName">"We, the Vehicles"</span>, by Maritime</li>
+		</ul>
+	</div>
+</body>
+</html>

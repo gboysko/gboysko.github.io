@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201306alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('3108')"><span class="albumName">"A Farewell To Kings"</span>, by Rush</li>
+			<li onclick="moveToAlbum('3117')"><span class="albumName">"Blak And Blu"</span>, by Gary Clark Jr.</li>
+			<li onclick="moveToAlbum('2789')"><span class="albumName">"Marnie Stern"</span>, by Marnie Stern</li>
+			<li onclick="moveToAlbum('3112')"><span class="albumName">"Modern Vampires of the City"</span>, by Vampire Weekend</li>
+			<li onclick="moveToAlbum('3113')"><span class="albumName">"Random Access Memories"</span>, by Daft Punk</li>
+			<li onclick="moveToAlbum('3114')"><span class="albumName">"Shaking the Habitual"</span>, by The Knife</li>
+			<li onclick="moveToAlbum('3115')"><span class="albumName">"Yeezus"</span>, by Kanye West</li>
+		</ul>
+	</div>
+</body>
+</html>

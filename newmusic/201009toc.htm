@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(
+		function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		}
+	);
+});
+function moveToAlbum(aid) {
+	top.inner.albums.location.href = "201009alb.htm#" + aid;
+}
+</script>
+</head>
+<body>
+	<div class="toc">
+		<p>Albums</p>
+		<ul>
+			<li onclick="moveToAlbum('2738')"><span class="albumName">"A Lazarus Taxon"</span>, by Tortoise</li>
+			<li onclick="moveToAlbum('2748')"><span class="albumName">"Adult Swim Singles Project"</span>, by Various Artists</li>
+			<li onclick="moveToAlbum('2773')"><span class="albumName">"All Delighted People"</span>, by Sufjan Stevens</li>
+			<li onclick="moveToAlbum('1727')"><span class="albumName">"Ambient 1: Music for Airports"</span>, by Brian Eno</li>
+			<li onclick="moveToAlbum('2763')"><span class="albumName">"Blackbird and the Fox EP"</span>, by The Twilight Singers</li>
+			<li onclick="moveToAlbum('2815')"><span class="albumName">"FACE TAT"</span>, by Zach Hill</li>
+			<li onclick="moveToAlbum('2742')"><span class="albumName">"False Priest"</span>, by Of Montreal</li>
+			<li onclick="moveToAlbum('2663')"><span class="albumName">"Humbug"</span>, by Arctic Monkeys</li>
+			<li onclick="moveToAlbum('2747')"><span class="albumName">"Loaded"</span>, by The Velvet Underground</li>
+			<li onclick="moveToAlbum('2749')"><span class="albumName">"Our Shins are Whittled to the Bone"</span>, by Get the Horns</li>
+			<li onclick="moveToAlbum('2744')"><span class="albumName">"Personal Life"</span>, by The Thermals</li>
+			<li onclick="moveToAlbum('2751')"><span class="albumName">"Rage Against the Machine"</span>, by Rage Against the Machine</li>
+			<li onclick="moveToAlbum('2750')"><span class="albumName">"The Battle Of Los Angeles"</span>, by Rage Against the Machine</li>
+			<li onclick="moveToAlbum('2741')"><span class="albumName">"The Social Network"</span>, by Trent Reznor</li>
+		</ul>
+	</div>
+</body>
+</html>
