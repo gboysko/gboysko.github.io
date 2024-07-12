@@ -86,15 +86,15 @@ div.info-tip > span.message {
     font-size: 0.8em;
 }
 
-img {
+img, video {
     display: block;
-    margin: auto;
+    margin: 0.5em auto;
 }
 
 div.image-title {
     font-size: 0.9em;
     font-style: italic;
-    margin: 0.375em 0 0 0;
+    margin: 0 0 1em 0;
     text-align: center;
 }
 
