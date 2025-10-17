@@ -1,0 +1,195 @@
+/* E L E M E N T S */
+body {
+    background-color: whitesmoke;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 1.25em 0 0.75em 0;
+    font-size: 1.5em;
+}
+h1:nth-of-type(1) {
+    margin-top: 0;
+}
+
+h2 {
+    margin: 1.125em 0 0.675em 0;
+    font-size: 1.25em;
+}
+
+p {
+    margin: 1em 0 0.25em 0;
+    font-size: 1em;
+}
+
+ol {
+    margin: 1em 0 0.25em 1em;
+    list-style: decimal;
+}
+
+ul {
+    margin: 1em 0 0.25em 1em;
+    list-style: disc;
+}
+
+ol ul {
+    margin: 0.5em 0 0.125em 1em;
+}
+
+li {
+    margin: 0.75em 0 0.125em 0;
+}
+
+ol ul li {
+    margin: 0.5em 0 0 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
+
+/* P S E U D O   C L A S S E S */
+:root {
+    --icon-image-width: 30px;
+    --icon-image-height: 30px;
+    font-size: 1.2em;
+}
+
+/* C L A S S E S */
+.roboto-100 {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+.roboto-200 {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+.roboto-300 {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+.roboto-400 {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+.roboto-mono-300,
+.keyword {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.page {
+    padding: 2em;
+    width: 1000px;
+    background-color: white;
+    margin: 10px auto;
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid #999;
+}
+
+.tip {
+    margin: 0.75em 0;
+    border: 3px solid hsl(120, 75%, 25%);
+    border-radius: 10px;
+    padding: 0.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    /* Insert an image at the beginning */
+    &::before {
+        display: block;
+        width: var(--icon-image-width);
+        height: var(--icon-image-height);
+        content: '';
+        background-image: url(../images/idea.png);
+        background-size: cover;
+        flex-shrink: 0;
+    }
+
+    /* Special handling of the first P */
+    & P:nth-of-type(1) {
+        margin-top: 0;
+
+        &::before {
+            content: 'Tip: ';
+            font-weight: bold;
+        }
+    }
+}
+
+.term {
+    --term-hue-value: 200;
+    --term-sat-value: 75%;
+    display: inline-block;
+    border: 1px solid hsl(var(--term-hue-value), var(--term-sat-value), 25%);
+    border-radius: 15px;
+    padding: 0 0.4em;
+    background-color: hsl(var(--term-hue-value), var(--term-sat-value), 80%);
+    font-weight: bold;
+    color: hsl(var(--term-hue-value), var(--term-sat-value), 15%);
+    margin: 0;
+}
+
+.skip-numbered-item {
+    list-style-type: none;
+}
+
+.keyword {
+    font-size: 0.9em;
+}
+
+OL.special {
+    padding-left: 1em;
+    list-style: none;
+    counter-reset: myCounter;
+}
+
+OL.special LI {
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+OL.special LI:not(.skip) {
+    counter-increment: myCounter;
+}
+
+OL.special LI::before {
+    position: absolute;
+    left: -1em;
+    width: 1em;
+    text-align: left;
+}
+
+OL.special LI:not(.skip)::before {
+    content: counter(myCounter) ". ";
+}
