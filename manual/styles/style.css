@@ -63,6 +63,9 @@ q::after {
 :root {
     --icon-image-width: 30px;
     --icon-image-height: 30px;
+    --term-hue-value: 200;
+    --product-hue-value: 271;
+    --term-sat-value: 75%;
     font-size: 1.2em;
 }
 
@@ -114,9 +117,8 @@ q::after {
     border: 1px solid #999;
 }
 
-.tip {
+.call-out {
     margin: 0.75em 0;
-    border: 3px solid hsl(120, 75%, 25%);
     border-radius: 10px;
     padding: 0.5em;
     display: flex;
@@ -131,7 +133,6 @@ q::after {
         width: var(--icon-image-width);
         height: var(--icon-image-height);
         content: '';
-        background-image: url(../images/idea.png);
         background-size: cover;
         flex-shrink: 0;
     }
@@ -141,15 +142,60 @@ q::after {
         margin-top: 0;
 
         &::before {
-            content: 'Tip: ';
             font-weight: bold;
         }
     }
 }
 
+.tip {
+    border: 3px solid hsl(120, var(--term-sat-value), 25%);
+
+    /* Insert an image at the beginning */
+    &::before {
+        background-image: url(../images/idea.png);
+    }
+
+    /* Special handling of the first P */
+    & P:nth-of-type(1) {
+        &::before {
+            content: 'Tip: ';
+        }
+    }
+}
+
+.question {
+    border: 3px solid hsl(60, var(--term-sat-value), 25%);
+
+    /* Insert an image at the beginning */
+    &::before {
+        background-image: url(../images/question.png);
+    }
+
+    /* Special handling of the first P */
+    & P:nth-of-type(1) {
+        &::before {
+            content: 'Question: ';
+        }
+    }
+}
+
+.limited {
+    border: 3px solid hsl(0, var(--term-sat-value), 25%);
+
+    /* Insert an image at the beginning */
+    &::before {
+        background-image: url(../images/warning.png);
+    }
+
+    /* Special handling of the first P */
+    & P:nth-of-type(1) {
+        &::before {
+            content: 'Limitation: ';
+        }
+    }
+}
+
 .term {
-    --term-hue-value: 200;
-    --term-sat-value: 75%;
     display: inline-block;
     border: 1px solid hsl(var(--term-hue-value), var(--term-sat-value), 25%);
     border-radius: 15px;
@@ -174,12 +220,12 @@ OL.special {
     counter-reset: myCounter;
 }
 
-OL.special LI {
+OL.special > LI {
     position: relative;
     margin-bottom: 0.5em;
 }
 
-OL.special LI:not(.skip) {
+OL.special > LI:not(.skip) {
     counter-increment: myCounter;
 }
 
@@ -191,5 +237,15 @@ OL.special LI::before {
 }
 
 OL.special LI:not(.skip)::before {
-    content: counter(myCounter) ". ";
+    content: counter(myCounter) '. ';
+}
+
+SPAN.product-name {
+    font-family: 'Roboto Mono', monospace;
+    color: hsl(var(--product-hue-value), var(--term-sat-value), 35%);
+    font-weight: bold;
+}
+
+SPAN.product-name::before {
+    content: 'budgetme';
 }

@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="roboto-200">
     <head>
+        <!-- Icons from https://www.flaticon.com/ -->
         <title>budgetme - User Manual</title>
         <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
         <link rel="stylesheet" type="text/css" href="./styles/style.css" />
@@ -13,11 +14,12 @@
     </head>
     <body>
         <div class="page">
-            <h1>budgetme</h1>
+            <h1><span class="product-name"></span></h1>
             <h2>Overview</h2>
             <p>
-                budgetme is a Web-based application that allows you to manage
-                one or more budgets. With it, you can do the following:
+                <span class="product-name"></span> is a Web-based application
+                that allows you to manage one or more budgets. With it, you can
+                do the following:
             </p>
             <ol>
                 <li>
@@ -31,7 +33,7 @@
                     to each personal account.
                 </li>
             </ol>
-            <div class="tip">
+            <div class="call-out tip">
                 <div>
                     <p>
                         Keeping money separate between a <q>household</q> budget
@@ -67,7 +69,7 @@
                     or (monetary) gift.
                 </li>
             </ol>
-            <div class="tip">
+            <div class="call-out tip">
                 <div>
                     <p>
                         To get the most value out of this tool, you should
@@ -143,7 +145,7 @@
                     surplus (extra money) and a deficit (overspending).
                 </li>
             </ol>
-            <div class="tip">
+            <div class="call-out tip">
                 <div>
                     <p>
                         The slush fund is a system-defined category that
@@ -171,7 +173,7 @@
                     subtracted) from the slush fund; it remains in the category.
                 </li>
             </ol>
-            <div class="tip">
+            <div class="call-out tip">
                 <div>
                     <p>
                         A well-designed budget anticipates irregular payments
@@ -208,14 +210,15 @@
                     <strong
                         >Monitor historical trends and tune your budget.</strong
                     >
-                    By using budgetme over time, you'll be able to establish
-                    better estimates for your spending habits. For example, you
-                    may believe that you only need $600 a month for groceries.
-                    However, by examining a year's worth of data, you'll know
-                    more precisely whether this estimate is accurate.
+                    By using <span class="product-name"></span> over time,
+                    you'll be able to establish better estimates for your
+                    spending habits. For example, you may believe that you only
+                    need $600 a month for groceries. However, by examining a
+                    year's worth of data, you'll know more precisely whether
+                    this estimate is accurate.
                 </li>
             </ol>
-            <div class="tip">
+            <div class="call-out tip">
                 <div>
                     <p>
                         The best way to evolve your budget is to do
@@ -276,7 +279,7 @@
                         <span class="keyword">SLUSH</span> category.</strong
                     >
                     Like the <span class="keyword">INCOME</span> category,
-                    budgetme also creates a
+                    <span class="product-name"></span> also creates a
                     <span class="keyword">SLUSH</span> category for you. At the
                     end of the month, any unspent money <q>goes to slush.</q> If
                     you happened to overspend in a given month, don&rsquo;t
@@ -290,12 +293,273 @@
                 <li>
                     <strong>Subaccounts maintain a balance over months.</strong>
                     Sometimes, you need a category to track a future bill that
-                    occurs once a year. In this case, you <em>don&rsquo;t</em> want the
-                    balance at the end of the month to go back to the
-                    <span class="keyword">SLUSH</span> category, but remain inside
-                    it&rsquo;s own category. This allows you to see how the
-                    funds accrue and enable you to pay that future bill without
-                    affecting your monthly spending.
+                    occurs once a year. In this case, you
+                    <em>don&rsquo;t</em> want the balance at the end of the
+                    month to go back to the
+                    <span class="keyword">SLUSH</span> category, but remain
+                    inside it&rsquo;s own category. This allows you to see how
+                    the funds accrue and enable you to pay that future bill
+                    without affecting your monthly spending.
+                </li>
+            </ol>
+
+            <h2>Modes of operation</h2>
+            <p>
+                Before we get too deep into the mechanics of a budget, we should
+                talk about the different ways that a user can interact with a
+                budget. There are fundamentally three different
+                <q>modes</q> of interacting with a budget:
+            </p>
+            <ol class="special">
+                <li>
+                    <strong>Defining and Configuring.</strong> This is the
+                    process of deciding what categories your budget should
+                    consist of and how much money you want to allocate to each.
+                    It is the process of defining your payment methods
+                    (identifying the bank account and credit cards that you want
+                    to manage). It is also the process of identifying how much
+                    money in your current bank account should go to paying the
+                    next credit card bills and funding your subaccounts.
+                </li>
+                <li class="skip">
+                    Typically, this is done once at the beginning, however, you
+                    can always re-configure your budget over time.
+                </li>
+                <li>
+                    <strong>Tracking and Verifying.</strong> This is the process
+                    of recording your transactions (a process I call "tracking")
+                    and verifying your budget against bank statements. Each
+                    statement may refer to a checking account, credit card or a
+                    store card.
+                </li>
+                <li class="skip">
+                    When we find new (unrecorded) transactions on one of these
+                    statements, we add them to our budget. This gives us a
+                    complete picture of your spending.
+                    <span class="product-name"></span> produces its version of
+                    each bank statement and you compare it for correctness. In
+                    the end, the balances should be identical.
+                </li>
+                <li class="skip">
+                    We can verify spending for each payment method, whether it
+                    is a checking account, credit card or cash.
+                </li>
+                <li class="skip">
+                    This is your day-by-day process where you ensure that you
+                    are meeting your budget. It enables you to make good
+                    decisions, like
+                    <q>Should we go out for dinner tonight?</q> or
+                    <q>Can I afford to purchase some new clothes?</q>
+                </li>
+                <li>
+                    <strong>Forecasting and <q>Right-sizing.</q></strong> This
+                    is done after you have several months of budget data and you
+                    forecast future needs. For example, you can look at your
+                    budget after six months and answer questions like,
+                    <q
+                        >If I follow this budget, will I have enough money saved
+                        up for a downpayment on a car in a future month?</q
+                    >
+                </li>
+                <li class="skip">
+                    Often at the end of the calendar year, I like to review how
+                    I did and correct my category allocations for the future
+                    year. Maybe I had <em>overestimated</em> how much money I
+                    would need for <q>Auto Maintenance.</q> Maybe there were too
+                    many unexpected costs associated with our medical coverage.
+                    Starting in January, I can have newly sized categories that
+                    reflect my current habits and situation.
+                </li>
+            </ol>
+            <p>
+                <span class="product-name"></span> assists you in each mode and
+                places <q>controls</q> on who may perform these operations. For
+                example, when you are in the mode of
+                <q>Defining and Configuring,</q> you are essentially an
+                <span class="keyword">Administrator</span>. If you are working
+                with another person on a shared budget, you may want to grant
+                this user the same permissions, but that is up to you. If you
+                are <q>Tracking and Verifying,</q> you are in the mode of a
+                <span class="keyword">Editor</span>. If you are doing
+                <q>Forecasting and Right-sizing,</q> you are in the mode of a
+                <span class="keyword">Viewer</span>.
+            </p>
+            <p>
+                Finally, it is worth noting that permissions are
+                <q>inclusive</q> of lower ones. That is, if you are an
+                <span class="keyword">Editor</span>, you also have the rights of
+                the next lower level, which is a
+                <span class="keyword">Viewer.</span> It would be hard to be an
+                <span class="keyword">Editor</span> if you couldn't also view
+                the data. Therefore, an
+                <span class="keyword">Administrator</span> has all of the
+                permissions of an <span class="keyword">Editor</span> and
+                <span class="keyword">Viewer</span>, so choose the permissions
+                you grant wisely!
+            </p>
+            <h2>Getting Starting</h2>
+            <p>
+                Here&rsquo;s how you begin the process of defining and
+                configuring your first budget.
+            </p>
+            <ol class="special">
+                <li>
+                    <strong>Create a new Budget.</strong> Give your new budget a
+                    name (and an optional description). This is just a simple
+                    form and one click. Easy.
+                </li>
+                <li>
+                    <strong
+                        >Record your income and create your categories.</strong
+                    >
+                    There are two steps. First, record how much money you will
+                    have as income for this budget. We are looking for the
+                    <strong>net</strong> dollar amount. Second, we need to
+                    divide this income across a set of categories. Here, you
+                    create a category and tell us:
+                </li>
+                <ul>
+                    <li>The name of the category.</li>
+                    <li>
+                        Whether it is a <q>normal</q> category or a subaccount.
+                    </li>
+                    <li>
+                        How much money you need. We can help you if your
+                        category is based on a yearly bill and you want to save
+                        up an equal portion each month.
+                    </li>
+                </ul>
+                <li class="skip">
+                    Your goal is to allocate all of your (net) income across all
+                    of the categories. The remainder will go to your
+                    <q>Slush</q> category.
+                </li>
+                <li class="skip">
+                    <div class="call-out question">
+                        <div>
+                            <p>
+                                How do I know whether I should use a
+                                <q>normal</q> category or a subaccount? If you
+                                intend to spend all of the money in a category
+                                in the course of a month, it should be a
+                                <q>normal</q> category. Any overspending (or
+                                underspending) is resolved by the Slush
+                                category.
+                            </p>
+                            <p>
+                                If you need to save up over the course of one or
+                                more months, you should mark your category as a
+                                <q>subaccount.</q> In this case, any
+                                overspending (or underspending) is maintained in
+                                the category. Use this if you need to pay off a
+                                bill on a frequency of two months to a year.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="call-out tip">
+                        <div>
+                            <p>
+                                When you save for upcoming (big) bills over
+                                several months (using an equal amount each
+                                time), you ensure that you are not affected when
+                                the bill becomes due. This makes it easier to
+                                maintain your budget.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <strong
+                        >Define all of the payment methods associated with this
+                        budget.
+                    </strong>
+                    There are three <q>types</q> of payment methods: those that
+                    you pay with a bank account (like a checking account), a
+                    credit (or store) card and cash. While we can support many
+                    credit (or store) cards, we can only support one bank
+                    account.
+                </li>
+                <li class="skip">
+                    <div class="call-out limited">
+                        <div>
+                            <p>
+                                At this time, we can only support one bank
+                                account because we need to match all of your
+                                spending against a single bank account.
+                            </p>
+                            <p>
+                                If you had another bank account which you wanted
+                                to use for purchases, we wouldn&rsquo;t be able
+                                to produce a complete statement for it, and
+                                therefore you couldn&rsquo;t
+                                <q>reconcile</q> it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="call-out tip">
+                        <div>
+                            <p>
+                                If you live with another person and have
+                                separate bank accounts for <q>personal</q> and
+                                <q>joint</q> uses, then it is best to create two
+                                separate budgets; one for each use.
+                            </p>
+                            <p>
+                                In this way, it would satisfy the limitations of
+                                <span class="product-name"></span> by requiring
+                                one checking account with each budget.
+                            </p>
+                        </div>
+                    </div>
+                    Much like the checking account restriction, it is important
+                    to note that credit (and store) cards are
+                    <q>reconciled</q> against a budget. That means that we will
+                    try to match the balance of your credit card (and what the
+                    issuer says) with what our budget says. If they don&rsquo;t
+                    match up, then we are urged to find the missing transactions
+                    and record them in our budget.
+                </li>
+                <li class="skip">
+                    If a credit (or store card) has purchase
+                    <strong>outside of this budget</strong>, then it becomes
+                    hard to account for that in our application.
+                </li>
+                <li>
+                    <strong
+                        >Allocate from your checking account to credit cards,
+                        subaccounts.</strong
+                    >
+                    Your checking account has money saved in it for several
+                    purposes. It may have money saved up to pay a future credit
+                    card bill. You may also want to apportion some of it to an
+                    upcoming payment to another institution.
+                </li>
+                <li class="skip">
+                    You can specify how much money you want to go to each credit
+                    card, and how much to give to each subaccount category.
+                    Recall that a subaccount category may have a bill in a few
+                    months. You can put aside money to each of these categories
+                    so that when the bill is due, you&rsquo;ll have enough saved
+                    up.
+                </li>
+                <li class="skip">
+                    <div class="call-out tip">
+                        <div>
+                            <p>
+                                Start your new budget on the 1st of the month.
+                                In this way, you can easily determine how much
+                                you have to save up for credit card purchases in
+                                the prior months and
+                                <span class="product-name"></span> can help you
+                                figure out how much money you need for each
+                                subaccount.
+                            </p>
+                            <p>
+                                For all transactions in this month, they should
+                                be recorded in your budget.
+                            </p>
+                        </div>
+                    </div>
                 </li>
             </ol>
         </div>
